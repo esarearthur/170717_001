@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>7.0</ProjectVersion>
+    <ToolchainName>com.Atmel.AVRGCC8.CPP</ToolchainName>
+    <ProjectGuid>dce6c7e3-ee26-4d79-826b-08594b9ad897</ProjectGuid>
+    <avrdevice>atmega328p</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>CPP</Language>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <ArduinoProjectType>Sketch</ArduinoProjectType>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <Name>Blank</Name>
+    <RootNamespace>Blank</RootNamespace>
+    <ArduinoIdeDir>C:\Program Files (x86)\Arduino</ArduinoIdeDir>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <CacheFlash>true</CacheFlash>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress />
+    <UncachedRange />
+    <preserveEEPROM>true</preserveEEPROM>
+    <OverrideVtorValue />
+    <BootSegment>2</BootSegment>
+    <eraseonlaunchrule>1</eraseonlaunchrule>
+    <AssemblyName>Blank</AssemblyName>
+    <AsfFrameworkConfig>
+      <framework-data xmlns="">
+  <options />
+  <configurations />
+  <files />
+  <documentation help="" />
+  <offline-documentation help="" />
+  <dependencies>
+    <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.32.0" />
+  </dependencies>
+</framework-data>
+    </AsfFrameworkConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <AvrGccCpp>
+  <avrgcc.common.Device>-mmcu=atmega328p -B "%24(PackRepoDir)\Atmel\ATmega_DFP\1.2.132\gcc\dev\atmega328p"</avrgcc.common.Device>
+  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+  <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+  <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+  <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+  <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+  <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>NDEBUG</Value>
+      <Value>F_CPU=16000000L</Value>
+      <Value>ARDUINO=10802</Value>
+      <Value>ARDUINO_AVR_UNO</Value>
+      <Value>ARDUINO_ARCH_AVR</Value>
+      <Value>USB_VID=0x2341</Value>
+      <Value>USB_PID=0x0043</Value>
+      <Value>USB_MANUFACTURER="\"Arduino LLC\""</Value>
+    </ListValues>
+  </avrgcc.compiler.symbols.DefSymbols>
+  <avrgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\Atmel\ATmega_DFP\1.2.132\include</Value>
+      <Value>%24(ProjectDir)\..\ArduinoCore\include\core</Value>
+      <Value>%24(ProjectDir)\..\ArduinoCore\include\variants\standard</Value>
+      <Value>..\include\libraries\Adafruit_ESP8266</Value>
+      <Value>..\include\libraries\WiFiEsp\src</Value>
+      <Value>..\include\libraries\WiFiEsp\src\utility</Value>
+      <Value>..\include\libraries\Adafruit_MQTT_Library</Value>
+      <Value>..\include\libraries\SoftwareSerial\src</Value>
+      <Value>..\include\libraries\ArduinoJson</Value>
+      <Value>..\include\libraries\ArduinoJson\src</Value>
+      <Value>..\include\libraries\ArduinoJson\src\ArduinoJson</Value>
+      <Value>..\include\libraries\ArduinoJson\src\ArduinoJson\Data</Value>
+      <Value>..\include\libraries\ArduinoJson\src\ArduinoJson\Deserialization</Value>
+      <Value>..\include\libraries\ArduinoJson\src\ArduinoJson\Polyfills</Value>
+      <Value>..\include\libraries\ArduinoJson\src\ArduinoJson\Serialization</Value>
+      <Value>..\include\libraries\ArduinoJson\src\ArduinoJson\StringTraits</Value>
+      <Value>..\include\libraries\ArduinoJson\src\ArduinoJson\TypeTraits</Value>
+      <Value>..\include\libraries\ArduinoJson\third-party\catch</Value>
+      <Value>..\include\libraries\LM35</Value>
+      <Value>..\include\libraries\EEPROM\src</Value>
+      <Value>..\include\libraries\DHT_sensor_library</Value>
+      <Value>..\include\libraries\SimpleDHT</Value>
+    </ListValues>
+  </avrgcc.compiler.directories.IncludePaths>
+  <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
+  <avrgcc.compiler.optimization.OtherFlags>-fno-threadsafe-statics</avrgcc.compiler.optimization.OtherFlags>
+  <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+  <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
+  <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+  <avrgcc.compiler.warnings.InhibitAllWarnings>True</avrgcc.compiler.warnings.InhibitAllWarnings>
+  <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu99 -std=gnu11</avrgcc.compiler.miscellaneous.OtherFlags>
+  <avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcccpp.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>NDEBUG</Value>
+      <Value>F_CPU=16000000L</Value>
+      <Value>ARDUINO=10802</Value>
+      <Value>ARDUINO_AVR_UNO</Value>
+      <Value>ARDUINO_ARCH_AVR</Value>
+      <Value>USB_VID=0x2341</Value>
+      <Value>USB_PID=0x0043</Value>
+      <Value>USB_MANUFACTURER="\"Arduino LLC\""</Value>
+    </ListValues>
+  </avrgcccpp.compiler.symbols.DefSymbols>
+  <avrgcccpp.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\Atmel\ATmega_DFP\1.2.132\include</Value>
+      <Value>%24(ProjectDir)\..\ArduinoCore\include\core</Value>
+      <Value>%24(ProjectDir)\..\ArduinoCore\include\variants\standard</Value>
+      <Value>..\include\libraries\Adafruit_ESP8266</Value>
+      <Value>..\include\libraries\WiFiEsp\src</Value>
+      <Value>..\include\libraries\WiFiEsp\src\utility</Value>
+      <Value>..\include\libraries\Adafruit_MQTT_Library</Value>
+      <Value>..\include\libraries\SoftwareSerial\src</Value>
+      <Value>..\include\libraries\ArduinoJson</Value>
+      <Value>..\include\libraries\ArduinoJson\src</Value>
+      <Value>..\include\libraries\ArduinoJson\src\ArduinoJson</Value>
+      <Value>..\include\libraries\ArduinoJson\src\ArduinoJson\Data</Value>
+      <Value>..\include\libraries\ArduinoJson\src\ArduinoJson\Deserialization</Value>
+      <Value>..\include\libraries\ArduinoJson\src\ArduinoJson\Polyfills</Value>
+      <Value>..\include\libraries\ArduinoJson\src\ArduinoJson\Serialization</Value>
+      <Value>..\include\libraries\ArduinoJson\src\ArduinoJson\StringTraits</Value>
+      <Value>..\include\libraries\ArduinoJson\src\ArduinoJson\TypeTraits</Value>
+      <Value>..\include\libraries\ArduinoJson\third-party\catch</Value>
+      <Value>..\include\libraries\LM35</Value>
+      <Value>..\include\libraries\EEPROM\src</Value>
+      <Value>..\include\libraries\DHT_sensor_library</Value>
+      <Value>..\include\libraries\SimpleDHT</Value>
+    </ListValues>
+  </avrgcccpp.compiler.directories.IncludePaths>
+  <avrgcccpp.compiler.optimization.level>Optimize for size (-Os)</avrgcccpp.compiler.optimization.level>
+  <avrgcccpp.compiler.optimization.OtherFlags>-fno-threadsafe-statics</avrgcccpp.compiler.optimization.OtherFlags>
+  <avrgcccpp.compiler.optimization.PackStructureMembers>True</avrgcccpp.compiler.optimization.PackStructureMembers>
+  <avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcccpp.compiler.optimization.DebugLevel>Default (-g2)</avrgcccpp.compiler.optimization.DebugLevel>
+  <avrgcccpp.compiler.warnings.AllWarnings>True</avrgcccpp.compiler.warnings.AllWarnings>
+  <avrgcccpp.compiler.warnings.InhibitAllWarnings>True</avrgcccpp.compiler.warnings.InhibitAllWarnings>
+  <avrgcccpp.compiler.miscellaneous.OtherFlags>-std=gnu++11</avrgcccpp.compiler.miscellaneous.OtherFlags>
+  <avrgcccpp.linker.libraries.Libraries>
+    <ListValues>
+      <Value>libm</Value>
+    </ListValues>
+  </avrgcccpp.linker.libraries.Libraries>
+  <avrgcccpp.linker.miscellaneous.LinkerFlags>-Os</avrgcccpp.linker.miscellaneous.LinkerFlags>
+  <avrgcccpp.assembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\Atmel\ATmega_DFP\1.2.132\include</Value>
+    </ListValues>
+  </avrgcccpp.assembler.general.IncludePaths>
+  <avrgcccpp.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcccpp.assembler.debugging.DebugLevel>
+</AvrGccCpp>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <AvrGccCpp>
+  <avrgcc.common.Device>-mmcu=atmega328p -B "%24(PackRepoDir)\Atmel\ATmega_DFP\1.2.132\gcc\dev\atmega328p"</avrgcc.common.Device>
+  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+  <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+  <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+  <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+  <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+  <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>DEBUG</Value>
+      <Value>F_CPU=16000000L</Value>
+      <Value>ARDUINO=10802</Value>
+      <Value>ARDUINO_AVR_UNO</Value>
+      <Value>ARDUINO_ARCH_AVR</Value>
+      <Value>USB_VID=0x2341</Value>
+      <Value>USB_PID=0x0043</Value>
+      <Value>USB_MANUFACTURER="\"Arduino LLC\""</Value>
+    </ListValues>
+  </avrgcc.compiler.symbols.DefSymbols>
+  <avrgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\Atmel\ATmega_DFP\1.2.132\include</Value>
+      <Value>%24(ProjectDir)\..\ArduinoCore\include\core</Value>
+      <Value>%24(ProjectDir)\..\ArduinoCore\include\variants\standard</Value>
+      <Value>..\include\libraries\Adafruit_ESP8266</Value>
+      <Value>..\include\libraries\WiFiEsp\src</Value>
+      <Value>..\include\libraries\WiFiEsp\src\utility</Value>
+      <Value>..\include\libraries\Adafruit_MQTT_Library</Value>
+      <Value>..\include\libraries\SoftwareSerial\src</Value>
+      <Value>..\include\libraries\ArduinoJson</Value>
+      <Value>../include/libraries/MQ2</Value>
+      <Value>../include/libraries/LM35</Value>
+      <Value>../include/libraries/Time</Value>
+      <Value>../include/libraries/EEPROM/src</Value>
+      <Value>..\include\libraries\DHT_sensor_library</Value>
+      <Value>..\include\libraries\SimpleDHT</Value>
+    </ListValues>
+  </avrgcc.compiler.directories.IncludePaths>
+  <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
+  <avrgcc.compiler.optimization.OtherFlags>-fno-threadsafe-statics</avrgcc.compiler.optimization.OtherFlags>
+  <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+  <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
+  <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+  <avrgcc.compiler.warnings.InhibitAllWarnings>True</avrgcc.compiler.warnings.InhibitAllWarnings>
+  <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu99 -std=gnu11</avrgcc.compiler.miscellaneous.OtherFlags>
+  <avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcccpp.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>DEBUG</Value>
+      <Value>F_CPU=16000000L</Value>
+      <Value>ARDUINO=10802</Value>
+      <Value>ARDUINO_AVR_UNO</Value>
+      <Value>ARDUINO_ARCH_AVR</Value>
+      <Value>USB_VID=0x2341</Value>
+      <Value>USB_PID=0x0043</Value>
+      <Value>USB_MANUFACTURER="\"Arduino LLC\""</Value>
+    </ListValues>
+  </avrgcccpp.compiler.symbols.DefSymbols>
+  <avrgcccpp.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\Atmel\ATmega_DFP\1.2.132\include</Value>
+      <Value>%24(ProjectDir)\..\ArduinoCore\include\core</Value>
+      <Value>%24(ProjectDir)\..\ArduinoCore\include\variants\standard</Value>
+      <Value>..\include\libraries\Adafruit_ESP8266</Value>
+      <Value>..\include\libraries\WiFiEsp\src</Value>
+      <Value>..\include\libraries\WiFiEsp\src\utility</Value>
+      <Value>..\include\libraries\Adafruit_MQTT_Library</Value>
+      <Value>..\include\libraries\SoftwareSerial\src</Value>
+      <Value>..\include\libraries\ArduinoJson</Value>
+      <Value>../include/libraries/MQ2</Value>
+      <Value>../include/libraries/LM35</Value>
+      <Value>../include/libraries/Time</Value>
+      <Value>../include/libraries/EEPROM/src</Value>
+      <Value>..\include\libraries\DHT_sensor_library</Value>
+      <Value>..\include\libraries\SimpleDHT</Value>
+    </ListValues>
+  </avrgcccpp.compiler.directories.IncludePaths>
+  <avrgcccpp.compiler.optimization.level>Optimize for size (-Os)</avrgcccpp.compiler.optimization.level>
+  <avrgcccpp.compiler.optimization.OtherFlags>-fno-threadsafe-statics</avrgcccpp.compiler.optimization.OtherFlags>
+  <avrgcccpp.compiler.optimization.PackStructureMembers>True</avrgcccpp.compiler.optimization.PackStructureMembers>
+  <avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcccpp.compiler.optimization.DebugLevel>Default (-g2)</avrgcccpp.compiler.optimization.DebugLevel>
+  <avrgcccpp.compiler.warnings.AllWarnings>True</avrgcccpp.compiler.warnings.AllWarnings>
+  <avrgcccpp.compiler.warnings.InhibitAllWarnings>True</avrgcccpp.compiler.warnings.InhibitAllWarnings>
+  <avrgcccpp.compiler.miscellaneous.OtherFlags>-std=gnu++11</avrgcccpp.compiler.miscellaneous.OtherFlags>
+  <avrgcccpp.linker.libraries.Libraries>
+    <ListValues>
+      <Value>libm</Value>
+    </ListValues>
+  </avrgcccpp.linker.libraries.Libraries>
+  <avrgcccpp.linker.miscellaneous.LinkerFlags>-Os</avrgcccpp.linker.miscellaneous.LinkerFlags>
+  <avrgcccpp.assembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\Atmel\ATmega_DFP\1.2.132\include</Value>
+    </ListValues>
+  </avrgcccpp.assembler.general.IncludePaths>
+  <avrgcccpp.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcccpp.assembler.debugging.DebugLevel>
+</AvrGccCpp>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="include\libraries\Adafruit_MQTT_Library\Adafruit_MQTT.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\Adafruit_MQTT_Library\Adafruit_MQTT_CC3000.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\Adafruit_MQTT_Library\Adafruit_MQTT_Client.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\Adafruit_MQTT_Library\Adafruit_MQTT_FONA.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\ArduinoJson\ArduinoJson.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\EEPROM\src\EEPROM.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\MQ2\MQ2.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\SimpleDHT\SimpleDHT.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\SoftwareSerial\src\SoftwareSerial.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\WiFiEsp\src\utility\debug.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\WiFiEsp\src\utility\EspDrv.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\WiFiEsp\src\utility\RingBuffer.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\WiFiEsp\src\WiFiEsp.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\WiFiEsp\src\WiFiEspClient.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\WiFiEsp\src\WiFiEspServer.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\WiFiEsp\src\WiFiEspUdp.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Sketch.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\Adafruit_MQTT_Library\Adafruit_MQTT.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\Adafruit_MQTT_Library\Adafruit_MQTT_Client.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\MQ2\MQ2.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\SimpleDHT\SimpleDHT.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\SoftwareSerial\src\SoftwareSerial.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\WiFiEsp\src\utility\EspDrv.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\WiFiEsp\src\utility\RingBuffer.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\WiFiEsp\src\WiFiEsp.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\WiFiEsp\src\WiFiEspClient.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\WiFiEsp\src\WiFiEspServer.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\WiFiEsp\src\WiFiEspUdp.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Content Include="readme.html">
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ArduinoCore\ArduinoCore.cppproj">
+      <Name>ArduinoCore</Name>
+      <Project>874d5ed4-9018-4f4e-90e9-355c1b5e5d5b</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="include\" />
+    <Folder Include="include\libraries\" />
+    <Folder Include="include\libraries\Adafruit_MQTT_Library\" />
+    <Folder Include="include\libraries\ArduinoJson" />
+    <Folder Include="include\libraries\EEPROM\" />
+    <Folder Include="include\libraries\EEPROM\src\" />
+    <Folder Include="include\libraries\MQ2" />
+    <Folder Include="include\libraries\SimpleDHT\" />
+    <Folder Include="include\libraries\SoftwareSerial\" />
+    <Folder Include="include\libraries\SoftwareSerial\src\" />
+    <Folder Include="include\libraries\WiFiEsp\" />
+    <Folder Include="include\libraries\WiFiEsp\src\" />
+    <Folder Include="include\libraries\WiFiEsp\src\utility\" />
+    <Folder Include="src\" />
+    <Folder Include="src\libraries\" />
+    <Folder Include="src\libraries\Adafruit_MQTT_Library\" />
+    <Folder Include="src\libraries\MQ2" />
+    <Folder Include="src\libraries\SimpleDHT\" />
+    <Folder Include="src\libraries\SoftwareSerial\" />
+    <Folder Include="src\libraries\SoftwareSerial\src\" />
+    <Folder Include="src\libraries\WiFiEsp\" />
+    <Folder Include="src\libraries\WiFiEsp\src\" />
+    <Folder Include="src\libraries\WiFiEsp\src\utility\" />
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>
