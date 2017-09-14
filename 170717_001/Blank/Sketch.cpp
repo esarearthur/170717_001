@@ -240,7 +240,7 @@ void getAndSendData() {
 	pub_root["LIGHT"] = String((digitalRead(L1) | (digitalRead(L2) << 1) | (digitalRead(L3) << 2)));
 
 	pub_root.printTo(payload);
-	Serial.println(payload);      // Take this off during release
+	//Serial.println(payload);      // Take this off during release
 
 	if (!client_pub.publish(payload)) {
 		Serial.println(F("Publishing payload failed"));
